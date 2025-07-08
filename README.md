@@ -12,7 +12,7 @@ sudo docker exec -it oraclexe bash
 sqlplus sys/ORACLE@//localhost:1521/XE as sysdba
 ```
 Screenshot:
-![Connect as SYSDBA](sudo-docker.png)
+![Connect as SYSDBA](sudo%20docker.png)
 
 ## 2. Switch to the Correct Container (PDB)
 
@@ -28,7 +28,7 @@ CREATE USER testuser IDENTIFIED BY testpass;
 GRANT CONNECT, RESOURCE TO testuser;
 ```
 Screenshot:
-![User Altered](user-altered.png)
+![User Altered](user%20altered.png)
 
 ## 4. Connect as the New User
 
@@ -36,7 +36,7 @@ Screenshot:
 CONNECT testuser/testpass@//localhost:1521/XEPDB1
 ```
 Screenshot:
-![Create Table and Insert](create-table.png)
+![Create Table and Insert](create%20table.png)
 
 ## 5. Create Table & Insert Data (You May Get an Error)
 
